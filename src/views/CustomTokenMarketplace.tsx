@@ -23,11 +23,11 @@ const CustomTokenMarketplace: React.FC = () => {
       env: NETWORK,
       // pass additional settings param to configure shop display
       settings: {
-        //currencySymbol: 'LQN',
-        //currencyDecimals: 9,
-        //priceDecimals: 3,
-        //volumeDecimals: 1,
-       //// connectionUrl: RPC_HOST,
+        currencySymbol: 'LQN',
+        currencyDecimals: 9,
+        priceDecimals: 3,
+        volumeDecimals: 1,
+        connectionUrl: RPC_HOST,
       } as any,
     })
   );

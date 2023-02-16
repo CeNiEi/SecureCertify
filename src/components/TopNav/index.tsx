@@ -18,10 +18,10 @@ const ROUTES_ETH = [
 ];
 
 const ROUTES_SOLANA = [
-  { url: RouteName.home, name: 'Marketplace' },
-  { url: RouteName.sell, name: 'Sell' },
-  { url: RouteName.auctionsView, name: 'Auctions' },
-  { url: RouteName.drop, name: 'Edition Drops' },
+  { url: RouteName.home, name: 'Listed Certificates' },
+  { url: RouteName.sell, name: 'My Certificates' },
+  //{ url: RouteName.auctionsView, name: 'Auctions' },
+  //{ url: RouteName.drop, name: 'Edition Drops' },
 ];
 
 const getRoutes = () => {
@@ -84,7 +84,7 @@ const TopNav: React.FC = () => {
             <Link to={item.url}>{item.name}</Link>
           </li>
         ))}
-        {blockchain === BlockchainType.SOL && (
+        {/*blockchain === BlockchainType.SOL && (
           <DropdownAnchor
             ref={anchorRef}
             onClick={handleToggle}
@@ -114,7 +114,7 @@ const TopNav: React.FC = () => {
               </Paper>
             </Popper>
           </DropdownAnchor>
-        )}
+                    )*/}
       </Menu>
       <Wallet>
         <ConnectButton />
